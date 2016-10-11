@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignBottom="@+id/text"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="3sp"
+            android:layout_alignTop="@+id/fab"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_toRightOf="@+id/relative"
+        android:paddingBottom="16sp"
+        android:minHeight="100sp"
+        android:text="@string/lorem_ipsum"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

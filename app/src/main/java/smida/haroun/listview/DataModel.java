@@ -9,6 +9,7 @@ public class DataModel {
     String name;
     String type;
     String version_number;
+    String test;
     String feature;
 
     public DataModel() {
